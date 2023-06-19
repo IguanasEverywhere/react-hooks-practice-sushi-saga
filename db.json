@@ -113,7 +113,8 @@
       "name": "Oh Sake",
       "img_url": "./sushi/sake.png",
       "price": 10,
-      "created_at": "2018-07-27T18:53:16.292Z"
+      "created_at": "2018-07-27T18:53:16.292Z",
+      "eaten": true
     },
     {
       "id": 17,
@@ -141,7 +142,8 @@
       "name": "Oh Sake",
       "img_url": "./sushi/sake.png",
       "price": 10,
-      "created_at": "2018-07-27T18:53:16.301Z"
+      "created_at": "2018-07-27T18:53:16.301Z",
+      "eaten": true
     },
     {
       "id": 21,
