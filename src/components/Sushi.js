@@ -2,9 +2,11 @@ import React, { useState } from "react";
 
 function Sushi({ sushi, eatSushi, moneyRemaining }) {
 
-  const {img_url, price, name, id} = sushi
+  const {img_url, price, name, id, eaten} = sushi
 
-  const [isEaten, setIsEaten] = useState(false);
+  const [isEaten, setIsEaten] = useState(eaten === true ? true :false);
+
+  console.log('EATEN', eaten);
 
   function handleSushiClick() {
     eatSushi(sushi);
