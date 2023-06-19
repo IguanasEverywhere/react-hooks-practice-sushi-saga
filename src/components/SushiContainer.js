@@ -8,23 +8,17 @@ function SushiContainer({ allSushi, eatSushi, moneyRemaining }) {
 
   const filteredSushi = allSushi.filter((sushi) => sushi.id >= startingID && sushi.id < (startingID + 4));
   const nextFourSushi = filteredSushi.map((sushi) =>
-    // <Sushi
-    //   key={sushi.id}
-    //   name={sushi.name}
-    //   image={sushi.img_url}
-    //   price={sushi.price}
-    //   eatSushi={eatSushi}
-    //   moneyRemaining={moneyRemaining}
-    // />);
+
     <Sushi
       key={sushi.id}
+      id={sushi.id}
       sushi={sushi}
       eatSushi={eatSushi}
       moneyRemaining={moneyRemaining}
     />);
 
   function getNextFourSushi() {
-    setStartingID((prevID) => prevID + 4);
+    setStartingID((prevID) => prevID + 4 > 100 ? 1 : prevID + 4);
   }
 
   return (

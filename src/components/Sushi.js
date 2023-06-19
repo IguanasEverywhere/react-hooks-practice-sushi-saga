@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 function Sushi({ sushi, eatSushi, moneyRemaining }) {
 
-  const {img_url, price, name} = sushi
+  const {img_url, price, name, id} = sushi
 
   const [isUneaten, setIsUneaten] = useState(false);
 
@@ -24,7 +24,7 @@ function Sushi({ sushi, eatSushi, moneyRemaining }) {
         )}
       </div>
       <h4 className="sushi-details">
-        {name} - ${price}
+        {name} - ${price} ID: {id}
       </h4>
     </div>
   );
